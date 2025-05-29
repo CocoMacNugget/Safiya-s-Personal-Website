@@ -1,0 +1,600 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Futura', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    height: 100%; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.name {
+    font-size: 30px;
+    color: #D30069;
+    font-weight: 600;
+}
+
+.name:hover {
+    color: white;
+    text-shadow: 0 0 20px white, 0 0 50px white;
+    transform: scale(1.1);
+}
+
+.navbar {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    padding: 10px 0;
+}
+
+.navbar a:hover {
+    color: #D30069;
+    border-bottom: 3px solid #D30069;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 12%;
+    background: white;
+    position: relative;
+    margin-top: 60px;
+}
+
+.home-content {
+    max-width: 800px;
+    width: 100%;
+}
+
+.home-content h3 {
+    font-size: 40px;
+}
+
+.home-content h2 {
+    display: block;
+    font-size: 40px;
+    margin-top: 5px;
+    color: #D30069;
+}
+
+.home-content p {
+    font-size: 20px;
+}
+
+.img-box {
+    width: 45vw; 
+    height: 35vw; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    position: relative;
+    box-shadow: 0 0 25px #D30069, 0 0 50px #D30069;
+}
+
+.img-box img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10% 12%;
+    gap: 10em;
+    background: black;
+}
+
+.about-content h2 {
+    margin-top: 20px;
+    text-align: left;
+    color: white;
+    font-size: 40px;
+}
+
+.about-content h3 {
+    text-align: left;
+    color: white;
+    font-size: 40px;
+    margin: 0em 0 1em 0 1em;
+}
+
+.about-content p {
+    color: white;
+    font-size: 18px; 
+    margin-top: 20px; 
+    max-width: 600px; 
+    line-height: 1.6; 
+}
+
+.about-img img {
+    position: relative;
+    overflow: hidden;
+    width: 30vw;
+    height: 35vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #D30069, 0 0 50px #D30069;
+}
+
+.project1, .project2 {
+    background-color: white;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.project1 .project1-heading h2, .project2 .project2-heading h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.project1 .project1-heading p, .project2 .project2-heading p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project1-toggle-container .button, .project2-toggle-container .button {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid #D30069;
+}
+
+.project1-toggle-container .button:hover, .project2-toggle-container .button:hover {
+    color: white;
+    background-color: #D30069;
+}
+
+.hidden {
+    display: none;
+}
+
+#project-sections1:target, #project-sections2:target{
+    display: block;
+}
+
+.project1-toggle-container .button[href="#project-sections1"]:target,
+.project2-toggle-container .button[href="#project-sections2"]:target {
+    display: block;
+}
+
+.project1 .project-details, .project2 .project-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 40px;
+    box-shadow: 0 0 15px #D30069;
+}
+
+.project1 .project-details h3, .project2 .project-details h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.project1 .project-details p, .project2 .project-details p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.project1 .project-details img, .project2 .project-details img,
+.project1 .project-details video {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: auto;
+    margin-left: 20px;
+}
+
+#project-3, #project-5, #project-8, #project-9,
+#project-10, #project-11, #project-12, #project-13 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-3 img{
+    margin-top: 10px;
+    width: 900px;
+    height: auto;
+}
+
+#project-5 img, #project-8 img{
+    margin-top: 10px;
+    width: 800px;
+    height: auto;
+}
+
+.contact-form {
+    text-align: center;
+    padding: 1% 14%;
+    gap: 10em;
+    background: #FFFFF1;
+}
+
+.contact-form h2 {
+    font-size: 36px;
+    margin: 3em 0 1em;
+}
+
+.contact-form form {
+    max-width: 30rem;
+    margin: 1rem auto;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 1.5em;
+    font-size: 14px;
+    background: rgb(241, 241, 241);
+    border-radius: .8rem;
+    margin: 1rem 0;
+}
+
+.btn-1 {
+    padding: 8px 16px !important;
+    max-width: fit-content !important;
+    background-color: black;
+    color: black !important;
+    border: 2px solid transparent !important;
+    border-radius: 8px !important;
+    font-size: 15px !important;
+    letter-spacing: 1px !important;
+    font-weight: 400 !important;
+    transition: background-color 0.3s ease, color 0.3 ease !important;
+    cursor: pointer !important;
+}
+
+.btn-1:hover {
+    background-color: #D30069;
+    color: white;
+    box-shadow: 0 0 25px #D30069;
+}
+
+.footer {
+    position: relative;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.footer .social a {
+    font-size: 36px;
+    color: white;
+    border: 2px solid #D30069;
+    width: 50px;
+    height: 50px;
+    line-height: 48px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100%;
+    margin: 0 10px;
+    box-shadow: 0 0 12px #D30069, 0 0 12px #D30069;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.footer .social a:hover {
+    background-color: #D30069;
+    color: black;
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.footer ul li a:hover{
+    color: #D30069;
+    border-bottom: 3px solid #D30069;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 15px 8%;
+        z-index: 1000;
+    }
+    .name {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .navbar {
+        gap: 25px;
+    }
+    .navbar a {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 8px 0;
+    }
+    .home {
+        padding: 15px 8%;
+    }
+    .home-content {
+        max-width: 700px;
+    }
+    .home-content h3,
+    .home-content h2 {
+        font-size: 35px;
+    }
+    .home-content p {
+        font-size: 18px;
+    }
+    .img-box {
+        width: 45vw;
+        height: 30vw;
+    }
+    .about {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 8% 10%;
+        gap: 2em;
+    }
+    .about-content h2,
+    .about-content h3 {
+        text-align: center;
+        font-size: 35px;
+    }
+    .about-content p {
+        text-align: center;
+        font-size: 16px;
+    }
+    .about-img img {
+        width: 35vw;
+        height: 40vw;
+    }
+    .portfolio .portfolio-heading h2{
+        font-size: 25px;
+    }
+    .portfolio .portfolio-heading p {
+        font-size: 18px;
+    }
+    .project-toggle-container .button {
+        padding: 8px 18px;
+    }
+    .portfolio .project-details {
+        padding: 20px;
+    }
+    .portfolio .project-details h3 {
+        font-size: 20px;
+    }
+    .portfolio .project-details p {
+        font-size: 18px;
+    }
+    .portfolio .project-details img,
+    .portfolio .project-details video {
+        width: 300px;
+    }
+    #project-3 img{
+        width: 500px;
+    }
+    #project-6 img,
+    #project-7 img {
+        width: 500px;
+    }
+    .contact-form {
+        padding: 1% 12%;
+        gap: 8em;
+    }
+    .contact-form h2 {
+        font-size: 30px;
+    }
+    
+    .contact-form form {
+        max-width: 35em;
+    }
+    
+    .contact-form form input,
+    .contact-form form textarea {
+        font-size: 16px;
+    }
+    .btn-1 {
+        padding: 6px 14px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .footer {
+        padding: 35px 0;
+    }
+    .footer .social a {
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        line-height: 46px;
+        font-weight: 400;
+    }
+    .footer ul {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+@media (max-width: 600px) {
+    header {
+        padding: 10px 6%;
+        z-index: 1000;
+    }
+    .name {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .navbar {
+        gap: 20px;
+    }
+    .navbar a {
+        font-size: 14px;
+        font-weight: 300;
+        padding: 6px 0;
+    }
+    .home {
+        padding: 10px 6%;
+    }
+    .home-content {
+        max-width: 600px;
+    }
+    .home-content h3,
+    .home-content h2 {
+        font-size: 25px;
+    }
+    .home-content p {
+        font-size: 16px;
+    }
+    .img-box {
+        width: 45vw;
+        height: 30vw;
+    }
+    .about {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 6% 8%;
+        gap: 2em;
+    }
+    .about-content h2,
+    .about-content h3 {
+        text-align: center;
+        font-size: 25px;
+    }
+    .about-content p {
+        text-align: center;
+        font-size: 14px;
+    }
+    .about-img img {
+        width: 35vw;
+        height: 40vw;
+    }
+    .portfolio .portfolio-heading h2{
+        font-size: 20px;
+    }
+    .portfolio .portfolio-heading p {
+        font-size: 16px;
+    }
+    .project-toggle-container .button {
+        padding: 6px 16px;
+    }
+    .portfolio .project-details {
+        padding: 15px;
+    }
+    .portfolio .project-details h3 {
+        font-size: 20px;
+    }
+    .portfolio .project-details p {
+        font-size: 16px;
+    }
+    .portfolio .project-details img,
+    .portfolio .project-details video {
+        width: 200px;
+    }
+    #project-3 img{
+        width: 350px;
+    }
+    #project-6 img,
+    #project-7 img {
+        width: 300px;
+    }
+    .contact-form {
+        padding: 1% 10%;
+        gap: 6em;
+    }
+    .contact-form h2 {
+        font-size: 25px;
+    }
+    
+    .contact-form form {
+        max-width: 30em;
+    }
+    
+    .contact-form form input,
+    .contact-form form textarea {
+        font-size: 14px;
+    }
+    .btn-1 {
+        padding: 5px 12px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .footer {
+        padding: 30px 0;
+    }
+    .footer .social a {
+        font-size: 25px;
+        width: 40px;
+        height: 40px;
+        line-height: 42px;
+        font-weight: 400;
+    }
+    .footer ul {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
