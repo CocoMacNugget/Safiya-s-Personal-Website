@@ -21,13 +21,13 @@
         <h2 class="contact me">Contact <span>Me</span></h2>
         <form action="main.php" method="POST">
             <div>
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="tel" placeholder="000 000 0000" required>
-                <input type="text" placeholder="Subject" required>
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="000 000 0000" required>
+                <input type="text" name="subject" placeholder="Subject" required>
             </div>
-            <textarea cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send Message" class="btn-1">
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" name="submit" value="Send Message" class="btn-1">
         </form>
     </section>
 
