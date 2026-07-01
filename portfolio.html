@@ -13,186 +13,278 @@
 <body>
 
 <header>
-    <a href="index.html" class="name">Safiya Elmi</a>
-    <nav class="navbar">
-        <a href="index.html">Home Page</a> 
-        <a href="about.html">About Me</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact Me</a>
-    </nav>
+    <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand name" href="index.html">
+            Safiya Elmi
+        </a>
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="nav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 </header>
 
-<section id="project1" class="project1 container">
-    <div class="project1-heading">
-        <h2>2024 Projects</h2> 
-        <p>Here are some of my projects that I have worked on in 2024.</p> 
-    </div> 
-    <div class="project1-toggle-container"> 
-        <a href="#project-sections1" class="button">Show Projects</a> 
-        <a href="#" class="button">Hide Projects</a> 
-    </div> 
-    <div id="project-sections1" class="hidden"> 
-        <section id="project1" class="project-details"> 
-            <div> 
-                <h3>Original logo</h3> 
-                <p>This logo was the initial logo of House of Hope. We choose basic colours and used the roof and coin 
-                    as our icons. We later decided we need to change the logo completely. 
-                </p> 
-            </div> 
-            <a> 
-                <img src="images/Originallogo.png" alt="Original logo of House of hope"> 
-            </a> 
-        </section> 
-        <section id="project-2" class="project-details"> 
-            <div> 
-                <h3>Final logo</h3> 
-                <p>The final logo of the NGO, House of Hope. After the initial logo, we decided to change our brand 
-                    colours completely and the logo needed to match our brand's new colour palettes. Since this NGO is 
-                    family orientated, we chose our current icon. 
-                </p> 
-            </div> 
-            <a> 
-                <img src="images/Newlogo.png" alt="Final logo of House of hope"> 
-            </a>
-        </section> 
-        <section id="project-3" class="project-details"> 
-            <div> 
-                <h3>Brand Guideline</h3> 
-                <p>The brand guideline for House of Hope, which includes the final logo, color schemes, typography, 
-                    and more. 
-                </p> 
-            </div> 
-            <a> 
-                <img src="images/Brandguide.png" alt="Brand guideline of House of hope"> 
-            </a> 
-        </section> 
-        <section id="project-4" class="project-details"> 
-            <div> 
-                <h3>Back of the business card</h3> 
-                <p>The back part of the business card of the NGO, House of Hope. The placing of the icon to the right was 
-                    so that the information was seen first then the icon of our NGO. 
-                </p> 
-            </div> 
-            <a> 
-                <img src="images/Businesscard(BV).png" alt="Back part of the House of hope business card"> 
-            </a> 
-        </section> 
-        <section id="project-5" class="project-details"> 
-            <div> 
-                <h3>Storyboard</h3> 
-                <p>The storyboard of our TikTok video advertising the NGO. The storyboard contains breif descriptions the 
-                    shot that have been taken for the video. 
-                </p>
-            </div> 
-            <a> 
-                <img src="images/Storyboard.jpg" alt="Storyboard of the tiktok video advertisement"> 
-            </a> 
-        </section> 
-        <section id="project-6" class="project-details"> 
-            <div> 
-                <h3>TikTok video</h3> 
-                <p>A TikTok video advertising the NGO. This video shows why we started this NGO and how we will be helping 
-                    the refugees in South Africa. 
-                </p> 
-            </div> 
-            <div> 
-                <video controls preload="metadata"> 
-                    <source src="tiktokvideo.mp4" type="video/mp4"> Your browser does not support the video tag. 
-                </video> 
-            </div> 
-        </section> 
-        <section id="project-7" class="project-details"> 
-            <div> 
-                <h3>Logo of Future Warriors</h3> 
-                <p>This logo was the final logo of Future Warrior. My group members and I wanted to go for warm, inviting 
-                    colours. 
-                </p> 
-            </div> 
-            <a> 
-                <img src="images/FutureWarriors.png" alt="Logo of Future Warriors"> 
-            </a> 
-        </section> 
-        <section id="project-8" class="project-details"> 
-            <div> 
-                <h3>Home page of Future Warriors</h3> 
-                <p>I designed the home page of the website. I also included gradient to buttons and headings across the 
-                    whole website. I was resposible for colour scheme of the website. 
-                </p> 
-            </div> 
-            <a> 
-                <img src="images/HomePage.jpg" alt="Logo of Future Warriors"> 
-            </a> 
-        </section> 
+<section class="project1 container py-5">
+    <div class="text-center mb-4">
+        <h2>2024 Projects</h2>
+        <p>
+            Here are some of my projects that I have worked on in 2024.
+        </p>
+        <a href="#project-sections1" class="btn btn-primary">
+            Show Projects
+        </a>
+        <a href="#" class="btn btn-outline-secondary">
+            Hide Projects
+        </a>
     </div>
-</section> 
+    <div id="project-sections1" class="mt-4">
+        <div class="project-details">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>Original Logo</h3>
+                    <p>
+                        This logo was the initial logo of House of Hope. We used basic colours and simple icons.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="images/Originallogo.png"
+                         class="img-fluid"
+                         alt="Original logo">
+                </div>
+            </div>
+        </div>
+        <div class="project-details">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>Final Logo</h3>
+                    <p>
+                        Final branding version of House of Hope with updated colours and identity.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="images/Newlogo.png"
+                         class="img-fluid"
+                         alt="Final logo">
+                </div>
+            </div>
+        </div>
+        <div class="project-details">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>Brand Guideline</h3>
+                    <p>
+                        Brand guideline document including logo usage, typography and colours.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="images/Brandguide.png"
+                         class="img-fluid"
+                         alt="Brand guideline">
+                </div>
+            </div>
+        </div>
+        <div class="project-details">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>Business Card</h3>
+                    <p>
+                        Back design of the House of Hope business card.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="images/Businesscard(BV).png"
+                         class="img-fluid"
+                         alt="Business card">
+                </div>
+            </div>
+        </div>
+        <div class="project-details">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>Storyboard</h3>
+                    <p>
+                        Storyboard used for planning the TikTok promotional video.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="images/Storyboard.jpg"
+                         class="img-fluid"
+                         alt="Storyboard">
+                </div>
+            </div>
+        </div>
+        <div class="project-details">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>TikTok Video</h3>
+                    <p>
+                        Promotional video explaining the purpose of the NGO.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <video class="img-fluid" controls>
+                        <source src="tiktokvideo.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="project-details">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>Future Warriors Logo</h3>
+                    <p>
+                        Final logo design using warm and inviting colours.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="images/FutureWarriors.png"
+                         class="img-fluid"
+                         alt="Future Warriors logo">
+                </div>
+            </div>
+        </div>
+        <div class="project-details">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>Future Warriors Homepage</h3>
+                    <p>
+                        Designed homepage layout with gradient buttons and consistent theme.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="images/HomePage.jpg"
+                         class="img-fluid"
+                         alt="Homepage design">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<section id="project2" class="project2 container">
-    <div class="project2-heading"> 
-        <h2>2025 Projects</h2> 
-        <p>Here are some of the projects I have worked on this year.
-        </p> 
-    </div> 
-    <div class="project2-toggle-container"> 
-        <a href="#project-sections2" class="button">Show Projects</a> 
-        <a href="#" class="button">Hide Projects</a> 
-    </div> 
-    <div id="project-sections2" class="hidden"> 
-        <section id="project-9" class="project-details"> 
-            <div> 
-                <h3>Home page wireframe</h3> 
-                <p>This is the wireframe of the home page of IzikoLethu, a website me and my group are working on. It 
-                    is a student accommodation website. 
-                </p> 
-            </div> 
-            <a> 
-                <img src="images/Wireframe1.jpg" alt="Home page wireframe"> 
-            </a> 
-        </section> 
-        <section id="project-10" class="project-details"> 
-            <div> 
-                <h3>About us page wireframe</h3> 
-                <p>This is the wireframe of the about us page of IzikoLethu.</p> 
-            </div> 
-            <a> 
-                <img src="images/Wireframe2.jpg" alt="About us page wireframe"> 
-            </a> 
-        </section> 
-        <section id="project-11" class="project-details"> 
-            <div> 
-                <h3>Home page wireframe</h3> 
-                <p>This is the wireframe of the student dashboard of IzikoLethu.</p> 
-            </div> 
-            <a> 
-                <img src="images/Wireframe3.jpg" alt="Home page wireframe"> 
-            </a> 
-        </section> 
-        <section id="project-12" class="project-details"> 
-            <div> 
-                <h3>Home page wireframe</h3> 
-                <p>This is the wireframe of the students accomodation search of IzikoLethu.</p> 
-            </div> 
-            <a> 
-                <img src="images/Wireframe4.jpg" alt="Home page wireframe"> 
-            </a> 
-        </section> 
-        <section id="project-13" class="project-details"> 
-            <div> 
-                <h3>Home page wireframe</h3> 
-                <p>This is the wireframe of the students' saved accomodation of IzikoLethu.</p> 
-            </div> 
-            <a> 
-                <img src="images/Wireframe5.jpg" alt="Home page wireframe"> 
-            </a> 
-        </section> 
-        <section id="project-14" class="project-details"> 
-            <div> 
-                <h3>IzikoLethu logo</h3> 
-                <p>This is the logo of IzikoLethu.</p> 
-            </div> 
-            <a> 
-                <img src="images/IzikoLethu.png" alt="Logo of IzikoLethu"> 
-            </a> 
-        </section> 
+<section class="project2 container py-5">
+    <div class="text-center mb-4">
+        <h2>2025 Projects</h2>
+        <p>
+            Here are some of the projects I have worked on this year.
+        </p>
+        <a href="#project-sections2" class="btn btn-primary">
+            Show Projects
+        </a>
+        <a href="#" class="btn btn-outline-secondary">
+            Hide Projects
+        </a>
+    </div>
+    <div id="project-sections2" class="mt-4">
+        <div class="project-details">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>Home Page Wireframe</h3>
+                    <p>
+                        This is the wireframe of the home page of IzikoLethu, a student accommodation platform.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="images/Wireframe1.jpg"
+                         class="img-fluid"
+                         alt="Home page wireframe">
+                </div>
+            </div>
+        </div>
+        <div class="project-details">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>About Us Wireframe</h3>
+                    <p>
+                        Wireframe design for the About Us page of IzikoLethu.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="images/Wireframe2.jpg"
+                         class="img-fluid"
+                         alt="About page wireframe">
+                </div>
+            </div>
+        </div>
+        <div class="project-details">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>Student Dashboard Wireframe</h3>
+                    <p>
+                        Wireframe showing dashboard layout for student users.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="images/Wireframe3.jpg"
+                         class="img-fluid"
+                         alt="Dashboard wireframe">
+                </div>
+            </div>
+        </div>
+        <div class="project-details">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>Accommodation Search Wireframe</h3>
+                    <p>
+                        Wireframe for searching student accommodation listings.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="images/Wireframe4.jpg"
+                         class="img-fluid"
+                         alt="Search wireframe">
+                </div>
+            </div>
+        </div>
+        <div class="project-details">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>Saved Accommodation Wireframe</h3>
+                    <p>
+                        Wireframe showing saved accommodation feature for students.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="images/Wireframe5.jpg"
+                         class="img-fluid"
+                         alt="Saved accommodation wireframe">
+                </div>
+
+            </div>
+        </div>
+        <div class="project-details">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>IzikoLethu Logo</h3>
+                    <p>
+                        Final logo design for the IzikoLethu project branding.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="images/IzikoLethu.png"
+                         class="img-fluid"
+                         alt="IzikoLethu logo">
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
