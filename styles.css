@@ -14,6 +14,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    padding-top: 80px;
 }
 
 header {
@@ -40,7 +41,7 @@ header {
 
 .navbar {
     background-color: black !important;
-    padding: 10px 0;
+    padding: 10px 20px;
 }
 
 .nav-link {
@@ -53,11 +54,13 @@ header {
 
 .nav-link:hover {
     color: #D30069 !important;
+    transform: translateY(-1px);
 }
 
 .navbar-brand {
     color: #D30069 !important;
     font-weight: 600;
+    font-size: 22px;
 }
 
 .navbar-toggler {
@@ -71,7 +74,7 @@ header {
 .home {
     min-height: 100vh;
     margin-top: 80px; 
-    padding: 40px 0;
+    padding: 40px 20px;
     background: white;
 }
 
@@ -97,9 +100,10 @@ header {
 .img-box {
     max-width: 380px;
     margin: auto;
-    box-shadow: 0 0 25px #D30069, 0 0 50px #D30069;
+    aspect-ratio: 1;
     border-radius: 50%;
     overflow: hidden;
+    box-shadow: 0 0 25px #D30069, 0 0 50px #D30069;
 }
 
 .img-box img {
@@ -110,18 +114,20 @@ header {
 
 .about {
     background-color: black;
-    padding: 100px 0;
+    padding: 100px 20px;
 }
 
 .about-content h2 {
     font-size: 40px;
     color: white;
+    font-weight: 700;
 }
 
 .about-content h3 {
     font-size: 30px;
     color: white;
     margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .about-content p {
@@ -146,13 +152,14 @@ header {
     background-color: white;
     text-align: center;
     margin-top: 90px;
-    padding: 60px 0;
+    padding: 60px 15px;
 }
 
 .project1 .project1-heading h2,
 .project2 .project2-heading h2 {
     font-size: 30px;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .project1 .project1-heading p,
@@ -160,6 +167,9 @@ header {
     font-size: 18px;
     margin-bottom: 20px;
     color: #333;
+    max-width: 700px; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project1-toggle-container .button,
@@ -172,7 +182,7 @@ header {
     border: 1px solid #D30069;
     cursor: pointer;
     transition: 0.3s ease;
-    margin: 10px 5px;
+    margin: 10px 8px;
 }
 
 .project1-toggle-container .button:hover,
@@ -185,11 +195,6 @@ header {
     display: none;
 }
 
-#project-sections1:target,
-#project-sections2:target {
-    display: block;
-}
-
 .project-details {
     background-color: white;
     padding: 25px;
@@ -197,6 +202,9 @@ header {
     margin-bottom: 30px;
     box-shadow: 0 0 15px #D30069;
     text-align: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-details h3 {
@@ -215,6 +223,7 @@ header {
 .project-details video {
     width: 100%;
     max-width: 500px;
+    height: auto;
     border-radius: 10px;
     margin-top: 10px;
 }
@@ -223,17 +232,20 @@ header {
 #project-5 img,
 #project-8 img {
     max-width: 700px;
+    width: 100%;
+    height: auto;
 }
 
 .contact-form {
     text-align: center;
-    padding: 120px 20px;
+    padding: 120px 20px 80px; 
     background: #FFFFF1;
 }
 
 .contact-form h2 {
     font-size: 36px;
     margin-bottom: 30px;
+    font-weight: 700;
 }
 
 .contact-form form {
@@ -252,6 +264,7 @@ header {
 .form-control:focus {
     box-shadow: 0 0 10px #D30069 !important;
     border: none !important;
+    outline: none !important;
 }
 
 .btn-primary {
@@ -260,6 +273,8 @@ header {
     padding: 12px 25px;
     font-size: 16px;
     transition: 0.3s ease;
+    color: white !important; 
+    border-radius: 8px;
 }
 
 .btn-primary:hover {
@@ -279,17 +294,17 @@ header {
 
 .footer {
     background-color: black;
-    padding: 25px 0;
+    padding: 18px 0;
     margin-top: auto;
 }
 
 .footer .social {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .footer .social a {
-    font-size: 30px;
+    font-size: 26px;
     color: white;
     border: 2px solid #D30069;
     width: 50px;
@@ -300,28 +315,29 @@ header {
     border-radius: 50%;
     margin: 0 10px;
     transition: 0.3s ease;
-    box-shadow: 0 0 12px #D30069;
+    box-shadow: 0 0 10px #D30069;
 }
 
 .footer .social a:hover {
     background-color: #D30069;
     color: black;
+    transform: translateY(-2px);
 }
 
 .footer ul {
     text-align: center;
     padding: 0;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .footer ul li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 8px;
 }
 
 .footer ul li a {
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     transition: 0.3s ease;
 }
 
@@ -331,8 +347,8 @@ header {
 
 .footer .copyright {
     text-align: center;
-    font-size: 12px;
-    color: white;
+    font-size: 11px;
+    color: #ccc;
 }
 
 @media (max-width: 768px) {
