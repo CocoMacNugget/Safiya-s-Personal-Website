@@ -14,7 +14,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 header {
