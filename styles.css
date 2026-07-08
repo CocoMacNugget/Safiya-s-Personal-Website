@@ -73,7 +73,7 @@ header {
 
 .home {
     min-height: 100vh;
-    margin-top: 80px; 
+    margin-top: 20px; 
     padding: 40px 20px;
     background: white;
 }
@@ -114,7 +114,7 @@ header {
 
 .about {
     background-color: black;
-    padding: 100px 20px;
+    padding: 20px 20px 100px;
 }
 
 .about-content h2 {
@@ -151,7 +151,7 @@ header {
 .project2 {
     background-color: white;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 20px;
     padding: 60px 15px;
 }
 
