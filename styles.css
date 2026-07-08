@@ -14,7 +14,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 header {
@@ -114,7 +114,7 @@ header {
 
 .about {
     background-color: black;
-    padding: 100px 20px;
+    padding: 150px 20px;
 }
 
 .about-content h2 {
